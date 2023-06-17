@@ -16,6 +16,7 @@ Before running, run this to avoid filling up /tmp directory on your node:
 It almost certainly won't run in the 48 hours allowed per qlogin session. You can restart the run from wherever it stopped, but use `snakemake --unlock` first or you will get a fail message about a locked directory (after the 4 hour DAG build).
 
 **Documentation - FUSION scripts & packaged software (gcta_nr_robust)**
+
 This workflow uses adapted forms of the FUSION scripts from the gusevlab, with info available here:
 https://github.com/gusevlab/fusion_twas
 http://gusevlab.org/projects/fusion/
