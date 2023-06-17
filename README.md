@@ -8,7 +8,7 @@ Recommended run-mode:
 `snakemake --cores all --scheduler greedy --keep-going`
 
 If you run without specifying greedy scheduler it defaults to it anyway but adds a 10 or so second delay to each job submission (ie. a lot of time on 750,000 jobs).
---keep-going instructs snakemak to continue if an individual job fails - I think I've now added escapes anyway for failed jobs (eg. a transcript with no variants) to allow continuity in the DAG, but I use keep-going anyway just in case to avoid killing the workflow unnecessarily. Any major issues preventing the run from finishing (eg. missing input files) will still cause it to end.
+--keep-going instructs snakemake to continue if an individual job fails - I think I've now added escapes anyway for failed jobs (eg. a transcript with no variants) to allow continuity in the DAG, but I use keep-going anyway just in case to avoid killing the workflow unnecessarily. Any major issues preventing the run from finishing (eg. missing input files) will still cause it to end.
 
 Before running, run this to avoid filling up /tmp directory on your node:
 `source /exports/applications/support/set_qlogin_environment.sh`
