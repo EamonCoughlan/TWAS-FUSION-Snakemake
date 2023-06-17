@@ -20,5 +20,7 @@ It almost certainly won't run in the 48 hours allowed per qlogin session. You ca
 **Documentation - FUSION scripts & packaged software (gcta_nr_robust)**
 
 This workflow uses adapted forms of the FUSION scripts from the gusevlab, with info available here:
+
 https://github.com/gusevlab/fusion_twas
+
 http://gusevlab.org/projects/fusion/
