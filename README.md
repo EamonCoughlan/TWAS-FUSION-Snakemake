@@ -3,7 +3,7 @@ Snakemake workflow for FUSION model generation and TWAS
 
 **Notes for users of EDDIE (University of Edinburgh Computing Cluster):**
 
-This workflow has hundreds of thousands of small jobs, recommended to make a qlogin request for 50+ nodes of 1-2GB each.
+This workflow has hundreds of thousands of small jobs; it is recommended to make a qlogin request for 50+ nodes of 1-2GB each.
 It will take around 4 hours to build the DAG
 
 Recommended run-mode:
