@@ -1,0 +1,5 @@
+gwasfile: 'data/meta.covid19.critical.sumstats' #file for GWAS
+seqfile:  'Monocyte' #file prefix for RNAseq
+conditions: ['UT', 'LPS24', 'IFN'] #different treatment conditions (or cell types, potentially?) from sequencing experiments
+transcript_coords: 'data/gene-location-short' #prefix of .txt file with the genomic coordinates of each transcript for each condition (eg. gene-location_UT.txt), 4 tab separated columns (ID | chr | startbp | endbp)
+pvalue: 0.05 #p value for heritability to select for in models (eg. select for models where hsq.p < 0.05)
