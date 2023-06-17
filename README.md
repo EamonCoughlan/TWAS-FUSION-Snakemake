@@ -1,5 +1,5 @@
 # TWAS-FUSION-Snakemake
-Snakemake workflow for the FUSION model generation and TWAS
+Snakemake workflow for FUSION model generation and TWAS
 
 **Notes for users of EDDIE (University of Edinburgh Computing Cluster):**
 
