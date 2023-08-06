@@ -4,7 +4,7 @@
 configfile: 'files/twasfusion_config.yml'
 CONDITIONS = config['conditions']
 fileprefix = 'data/' + config['seqfile']
-#one rule to rule them all (and with Snakemake bind them)
+#one rule to rule them all (and with Snakemake bind them) - the first rule is run as default by snakemake, used to generate variables and set 'goal' for the other rules
 rule all:
     input:
         expand('results/{condition}/TWAS_{i}.dat', condition = CONDITIONS, i = range(1, 23))

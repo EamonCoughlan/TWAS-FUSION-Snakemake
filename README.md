@@ -1,7 +1,22 @@
 # TWAS-FUSION-Snakemake
 Snakemake workflow for FUSION model generation and TWAS
 
-**Notes for users of EDDIE (University of Edinburgh Computing Cluster):**
+**These are the files required, with paths mapped in files/twas_config.yaml:**
+
+GWAS summary stats (config gwasfile)
+
+Plink (bed/bim/fam) files of the genotypes from the RNA sequencing, for each condition (naming convention prefix_condition, from config), in a /data subfolder
+
+Plink files of the LD reference, in the /data subfolder (it uses a full genome file, so merge into one if you have split by chr. Workflow will split it later when required.
+
+File with genome location of each gene/transcript from sequencing (4 tab separated columns (ID | chr | startbp | endbp)) (config transcript_coords)
+
+File with expression levels per transcript, mapped data/expression_{condition}.txt
+
+
+
+
+# Notes for users of EDDIE (University of Edinburgh Computing Cluster):
 
 This workflow has hundreds of thousands of small jobs; it is recommended to make a qlogin request for 50+ nodes of 1-2GB each.
 It will take around 4 hours to build the DAG (what Snakemake does when initiating/planning workflow)
