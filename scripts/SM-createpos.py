@@ -21,7 +21,7 @@ profile = profile[profile['hsq.pv'] < snakemake.params['pval']]
 loc = location[location['geneid'].isin(profile['id'])]
 #print(loc)
 
-profile['PANEL'] = 'UT' #snakemake wildcard {condition}
+profile['PANEL'] = snakemake.wildcards['condition']
 #merge pos with profile based on ensid/geneid
 profile = pd.merge(profile, loc, left_on='id', right_on='geneid')
 
